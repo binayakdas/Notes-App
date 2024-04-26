@@ -18,9 +18,7 @@ const {authenticateToken} = require("./utilities");
 app.use(express.json());
 
 app.use(
-    cors({
-        origin: "*",
-    })
+    cors("*")
 );
 
 app.get("/", (req, res) => {
